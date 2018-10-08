@@ -8,6 +8,9 @@
     <title>BVDU COEP</title>
     <!-- <link rel="stylesheet" href="assets/logo-showcase.css"> -->
     <style>
+        body{
+            background-color: lightblue;
+        }
         .catalog {
             display: flex;
             width: 100%;
@@ -16,6 +19,7 @@
         .cardImg {
             float: left;
             width: 80%;
+            border-radius: 10px;
         }
 
         .marquee {
@@ -33,6 +37,25 @@
             margin: 1%;
             border-radius: 20px;
         }
+        .row1 {
+            background-color: cornflowerblue;
+            display:flex; 
+            justify-content: space-around;
+            
+        }
+        .footer_imgs{
+            text-align: center;
+            border: 2px solid;
+            border-radius: 100px;
+            margin-top: 10px;
+        }
+        .qr{
+            border-radius: 0px;
+        }
+        .row1 p{
+            text-align: center;
+
+        }
     </style>
    
 </head>
@@ -45,7 +68,7 @@
     <!--logo-->
     <div style="display:block;">
         <img src="assets/logo.png" alt="logo1">
-        <img align="right" src="assets/BVUCOEP-LOGO.png" alt="logo2">
+        <img style="padding-top:35px" align="right" src="assets/BVUCOEP-LOGO.png" alt="logo2">
     </div>
     <!--nav -->
     <nav align="center" style="display:block;">
@@ -189,6 +212,48 @@
     </marquee>
 
     <!--footer-->
+    <section class="footer">
+        <div class="row1">  <!--row1-->
+            <div>
+                <H4>Quick Links</H4>
+                <ul>
+                    <li><a href="#">Activities</a></li>
+                    <li><a href="#">Student Support</a></li>
+                    <li><a href="#">Support Services</a></li>
+                </ul>
+
+            </div>
+            <div > <!--Awards-->
+                <img class="footer_imgs" src="assets/awards.png" alt="awards">
+                <p>Awards</p>
+
+            </div>
+            <div > <!--Photo Gallery-->
+                <img class="footer_imgs" src="assets/photogallery.png" alt="PG">
+                <p>Photo Gallery</p>
+
+            </div>
+            <div ><!--Alumni-->
+                <img class="footer_imgs" src="assets/alumini.png" alt="alumni">
+                <p>Alumni</p>
+
+            </div>
+            <div ><!--Exams-->
+                <img class="footer_imgs" src="assets/exams.png" alt="exams">
+                <p>Exams</p>
+
+            </div>
+            <div > <!--QR Code-->
+                <img class="footer_imgs qr"  src="assets/qrcode.png" alt="qrcode">
+                <P>QR Code</P>
+
+            </div>
+        </div>
+        <div style="background-color:black ; color: antiquewhite ; text-align: center"> <!--row2-->
+            <p>Copyright © 2018 BVU College Of Engineering</p>
+
+        </div>
+    </section>
 
 </body>
 
